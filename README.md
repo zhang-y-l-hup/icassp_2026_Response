@@ -25,7 +25,7 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 
 
 **Add the method LLGS (ICASSP) for comparison on the LOM dataset.**
-| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS | LLLGS  | Ours   |
+| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
 |---------|--------|--------|------------|--------|--------------|--------|--------|
 |         | PSNR ↑ | 18.447 |   9.378    | 26.747 |    20.358    | 15.753 | 22.371 |
 |  "bike" | SSIM ↑ | 0.547  |   0.254    | 0.851  |    0.754     | 0.623  | 0.858  |
@@ -38,6 +38,20 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 |         | PSNR ↑ | 16.482 |   12.269   | 19.177 |    16.161    | 16.541 | 19.845 |
 | "shrub" | SSIM ↑ | 0.559  |   0.129    | 0.553  |    0.667     | 0.543  | 0.714  |
 |         | LPIPS ↓| 0.374  |   0.713    | 0.289  |    0.207     | 0.366  | 0.204  |
+
+| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS | LLGS   | Ours   |
+|---------|--------|--------|------------|--------|--------------|--------|--------|
+|         | PSNR ↑ | 18.447 | 9.378      | <span style="color:red">26.747</span> | 20.358       | 15.753 | 22.371 |
+|  "bike" | SSIM ↑ | 0.547  | 0.254      | 0.851  | 0.754        | 0.623  | <span style="color:red">0.858</span> |
+|         | LPIPS ↓| 0.328  | 0.751      | 0.278  | 0.368        | 0.445  | <span style="color:red">0.219</span> |
+|---------|--------|--------|------------|--------|--------------|--------|--------|
+|         | PSNR ↑ | 14.472 | 13.288     | <span style="color:red">27.012</span> | 16.486       | 22.877 | 26.119 |
+|  "buu"  | SSIM ↑ | 0.634  | 0.633      | 0.895  | 0.741        | 0.878  | <span style="color:red">0.916</span> |
+|         | LPIPS ↓| 0.407  | 0.639      | 0.199  | 0.376        | 0.218  | <span style="color:red">0.176</span> |
+|---------|--------|--------|------------|--------|--------------|--------|--------|
+|         | PSNR ↑ | 16.482 | 12.269     | 19.177 | 16.161       | 16.541 | <span style="color:red">19.845</span> |
+| "shrub" | SSIM ↑ | 0.559  | 0.129      | 0.553  | 0.667        | 0.543  | <span style="color:red">0.714</span> |
+|         | LPIPS ↓| 0.374  | 0.713      | 0.289  | 0.207        | 0.366  | <span style="color:red">0.204</span> |
 
 ## 2. Quantitative Comparisons (Uniform/Non-Uniform Lighting)
 We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.
