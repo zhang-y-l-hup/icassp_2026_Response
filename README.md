@@ -27,3 +27,9 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 
 ## 2. Quantitative Comparisons (Uniform/Non-Uniform Lighting)
 We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.
+### 2.1 Uniform/Non-uniform Quantitative Comparison
+
+
+
+### 2.2 Effect Comparison
+<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/Frame%201.png" width="800" alt="颜色转换前后对比">
