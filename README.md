@@ -32,4 +32,4 @@ We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-u
 
 
 ### 2.2 Effect Comparison
-<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/Frame%201.png" width="800" alt="颜色转换前后对比">
+<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/Color%20Conversion%20Comparison.png" width="800" alt="颜色转换前后对比">
