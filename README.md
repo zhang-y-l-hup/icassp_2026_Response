@@ -20,3 +20,10 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 | GS-W           | ECCV (2024)       | Gaussian feature decoupling for wild scenes |
 | Luminance-GS   | CVPR (2025)       | View-adaptive curve adjustment for lighting |
 | LLGS           | ICASSP (2025)     | Gaussian illumination via absorptance modulation |
+
+### 1.3 Experimental results
+
+
+
+## 2. Quantitative Comparisons (Uniform/Non-Uniform Lighting)
+We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.
