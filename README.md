@@ -6,10 +6,10 @@ This repository provides supplementary experimental results to address the revie
 ## 1. Extended Experimental Setup
 ### 1.1 Datasets
 We evaluate our method on two representative datasets covering diverse lighting scenarios:
-| Dataset               | Number of Scenes | Lighting Scenarios                  | Resolution | Split Ratio (Train/Test) |
-|-----------------------|------------------|-------------------------------------|------------|---------------------------|
-| MipNeRF360-varying    | 7                | Varying exposure + normal lighting  | [例如：1920×1080] | 7:1                       |
-| LOM                   | 5                | Low-light + normal lighting         | [例如：1280×720]  | 7:1                       |
+| Dataset               | Number of Scenes | Lighting Scenarios                  | Split Ratio (Train/Test)  |
+|-----------------------|------------------|-------------------------------------|---------------------------|
+| MipNeRF360-varying    | 7                | Varying exposure + normal lighting  | 7:1                       |
+| LOM                   | 5                | Low-light + normal lighting         | 7:1                       |
 
 ### 1.2 Extended Baseline Methods
 We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-of-the-art methods:
