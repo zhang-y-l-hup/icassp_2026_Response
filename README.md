@@ -22,7 +22,32 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 | LLGS           | ICASSP (2025)     | Gaussian illumination via absorptance modulation |
 
 ### 1.3 Experimental results
+## Quantitative Results (MIPNeRF360-Varying, Partial Scenes)
+Table below shows performance metrics (PSNR ↑, SSIM ↑, LPIPS ↓) across different methods on partial scenes:
 
+| Scene       | Metric   | 3DGS    | Aleth-NeRF | WS-GS   | Luminance-GS | Ours    |
+|-------------|----------|---------|------------|---------|--------------|---------|
+|             | PSNR ↑   | 18.523  | 12.943     | 15.616  | 18.383       | 18.291  |
+| **bicycle** | SSIM ↑   | 0.514   | 0.195      | 0.563   | 0.646        | 0.637   |
+|             | LPIPS ↓  | 0.396   | 0.796      | 0.371   | 0.330        | 0.274   |
+|             | PSNR ↑   | 20.176  | 12.265     | 20.456  | 20.984       | 21.506  |
+| **garden**  | SSIM ↑   | 0.787   | 0.689      | 0.782   | 0.791        | 0.827   |
+|             | LPIPS ↓  | 0.203   | 0.813      | 0.212   | 0.195        | 0.191   |
+|             | PSNR ↑   | 15.098  | 12.454     | 15.892  | 16.850       | 17.341  |
+| **counter** | SSIM ↑   | 0.527   | 0.324      | 0.624   | 0.645        | 0.739   |
+|             | LPIPS ↓  | 0.368   | 0.780      | 0.37    | 0.302        | 0.224   |
+| **bonsai**  | PSNR ↑   | 12.53   | 8.14       | 15.52   | 15.70        | *       |
+|             | SSIM ↑   | 0.299   | 0.403      | 0.554   | 0.563        | *       |
+|             | LPIPS ↓  | 0.561   | 0.685      | 0.419   | 0.433        | *       |
+| **kitchen** | PSNR ↑   | 22.31   | 11.35      | 20.67   | 23.10        | *       |
+|             | SSIM ↑   | 0.831   | 0.397      | 0.802   | 0.833        | *       |
+|             | LPIPS ↓  | 0.177   | 0.579      | 0.164   | 0.143        | *       |
+| **room**    | PSNR ↑   | 14.35   | 7.15       | 17.19   | 16.82        | *       |
+|             | SSIM ↑   | 0.549   | 0.315      | 0.558   | 0.643        | *       |
+|             | LPIPS ↓  | 0.299   | 0.733      | 0.375   | 0.319        | *       |
+| **stump**   | PSNR ↑   | 16.61   | 12.43      | 14.89   | 15.63        | *       |
+|             | SSIM ↑   | 0.476   | 0.471      | 0.503   | 0.532        | *       |
+|             | LPIPS ↓  | 0.402   | 0.665      | 0.432   | 0.389        | *       |
 
 
 **Add the method LLGS (ICASSP) for comparison on the LOM dataset.(Note: ✅ indicates the best-performing metric for each evaluation item.)**
