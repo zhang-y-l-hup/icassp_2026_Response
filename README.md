@@ -22,23 +22,23 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 | LLGS           | ICASSP (2025)     | Gaussian illumination via absorptance modulation |
 
 ### 1.3 Experimental results
-**The table below presents the performance metrics (PSNR ↑, SSIM ↑, LPIPS ↓) of different methods across various scenes in the NeRF360-Varying dataset:**
+**The table below presents the performance metrics (PSNR ↑, SSIM ↑, LPIPS ↓) of different methods across various scenes in the NeRF360-Varying dataset:(Note: ✅ indicates the best-performing metric for each evaluation item.)**
 
 ### TABLE IV: QUANTITATIVE RESULTS OF MIPNERF360-VARYING (PARTIAL SCENES)
 
 | scene      | metric | 3DGS      | Aleth-NeRF | WS-GS     | Luminance-GS | Ours      |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
-|            | PSNR ↑ | 18.523    | 12.943     | 15.616    | 18.383       | 18.291    |
-|**"bicycle"**| SSIM ↑ | 0.514     | 0.195      | 0.563     | 0.646        | 0.637     |
-|            | LPIPS ↓| 0.396     | 0.796      | 0.371     | 0.330        | 0.274     |
+|            | PSNR ↑ | **18.523 ✅**    | 12.943     | 15.616    | 18.383       | 18.237    |
+|**"bicycle"**| SSIM ↑ | 0.514     | 0.195      | 0.563     | 0.646        | **0.691 ✅**     |
+|            | LPIPS ↓| 0.396     | 0.796      | 0.371     | 0.330        | **0.274 ✅**     |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
-|              | PSNR ↑ | 20.176    | 12.265     | 20.456    | 20.984       | 21.506    |
-|**"garden"**| SSIM ↑ | 0.787     | 0.689      | 0.782     | 0.791        | 0.827     |
-|            | LPIPS ↓| 0.203     | 0.813      | 0.212     | 0.195        | 0.191     |
+|              | PSNR ↑ | 20.187    | 12.685     | 20.482    | 20.984     | **21.526 ✅**    |
+|**"garden"**| SSIM ↑ | 0.736     | 0.229      | 0.756     | 0.791        | **0.807 ✅**     |
+|            | LPIPS ↓| 0.203     | 0.813      | 0.212     | 0.195        | **0.191 ✅**    |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
-|            | PSNR ↑ | 15.098    | 12.454     | 15.892    | 16.850       | 17.341    |
-|**"counter"**| SSIM ↑ | 0.527     | 0.324      | 0.624     | 0.645        | 0.739     |
-|            | LPIPS ↓| 0.368     | 0.780      | 0.37      | 0.302        | 0.224     |
+|            | PSNR ↑ | 15.098    | 12.454     | 15.892    | 16.850       | **17.341 ✅**    |
+|**"counter"**| SSIM ↑ | 0.527     | 0.324      | 0.624     | 0.645        | **0.739 ✅**     |
+|            | LPIPS ↓| 0.368     | 0.780      | 0.337      | 0.302        | **0.224 ✅**     |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
 |            | PSNR ↑ | 12.53     | 8.14       | 15.52     | 15.70        | *         |
 |**"bonsai"**| SSIM ↑ | 0.299     | 0.403      | 0.554     | 0.563        | *         |
