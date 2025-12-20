@@ -26,7 +26,7 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 
 ### TABLE IV: QUANTITATIVE RESULTS OF MIPNERF360-VARYING (PARTIAL SCENES)
 
-| scene      | metric | 3DGS      | Aleth-NeRF | GS-GS     | Luminance-GS | Ours      |
+| scene      | metric | 3DGS      | Aleth-NeRF | GS-W     | Luminance-GS | Ours      |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
 |            | PSNR ↑ | **18.523 ✅**    | 12.943     | 15.616    | 18.383       | 18.237    |
 |**"bicycle"**| SSIM ↑ | 0.514     | 0.195      | 0.563     | 0.646        | **0.691 ✅**     |
