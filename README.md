@@ -82,4 +82,4 @@ We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-u
 
 
 ## 3. Comparison of Colors Before and After Conversion
-<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/Color%20Conversion%20Comparison.png" width="800" alt="颜色转换前后对比">
+<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/3e6779475717787f9fbb050af572eab847e4b24e/images/Color%20Conversion%20Comparison.png" width="800" alt="颜色转换前后对比">
