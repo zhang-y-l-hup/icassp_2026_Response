@@ -57,8 +57,8 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 
 **Add the method LLGS (ICASSP) for comparison on the LOM dataset. Training with a mixed dataset of normal-light and low-light images(Note: ✅ indicates the best-performing metric for each evaluation item.)**
 
-|         | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
-|  scene  |--------|--------|------------|--------|--------------|--------|--------|
+|  scene  | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
+|---------|--------|--------|------------|--------|--------------|--------|--------|
 |         | PSNR ↑ | 18.447 |   9.378    | **26.747 ✅** |    20.358    | 15.753 | 22.371 |
 |  "bike" | SSIM ↑ | 0.547  |   0.254    | 0.851  |    0.754     | 0.623  |**0.858 ✅**  |
 |         | LPIPS ↓| 0.328  |   0.751    | 0.278  |    0.368     | 0.445  | **0.219 ✅**  |
