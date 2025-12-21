@@ -74,15 +74,25 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 
 ## 2. Experimental results under normal illumination conditions
 
-## 2.1 Quantitative Comparisons (normal Lighting)
+### 2.1 Quantitative Comparisons (normal Lighting)
+
+#### The following table shows the average results of the MipNeRF360-varying dataset under normal illumination conditions.
+
+|        |   SSIM   |  PSNR   |  LPIPS  |
+|--------|----------|---------|---------|
+|  3DGS  |  0.870  |  28.691  |  0.182  |
+|--------|----------|---------|---------|
+|Pixel-GS|  0.886  |  29.490  |  0.152  |
+|--------|----------|---------|---------|
+|  Ours  |**0.895✅**|**29.601✅**|**0.108✅**|
+
+####  The quantitative comparison results of PSNR/SSIM/LPIPS across all scenarios under normal illumination conditions are presented in the following table.
+
+
+
+
 **We report the PSNR/SSIM/LPIPS metrics of our method under both uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.** 
 **Although our method is specifically proposed for non-uniform illumination scenarios, experimental results demonstrate that it still achieves state-of-the-art (SOTA) performance even under normal illumination conditions.**
-| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
-
-
-### 2.1 Uniform/Non-uniform Quantitative Comparison
-
-
 
 ## 3. Comparison of Colors Before and After Conversion
 <img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/3e6779475717787f9fbb050af572eab847e4b24e/images/Color%20Conversion%20Comparison.png" width="800" alt="颜色转换前后对比">
