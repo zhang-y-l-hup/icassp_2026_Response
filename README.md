@@ -96,7 +96,7 @@ We report the SSIM/PSNR/LPIPS metrics of our method under both uniform lighting 
 
 #### The quantitative comparison results of SSIM/PSNR/LPIPS across all scenarios under normal illumination conditions are presented in the following table. (Note: The ✅ symbol indicates the optimal metric value.)
 
-### Table 1: Results of bicycle, bonsai, counter, garden scenarios
+**Table 1: Results of bicycle, bonsai, counter, garden scenarios**
 |            | bicycle                | bonsai                  | counter                 | garden                  |
 | :--------: | ---------------------- | ----------------------- | ----------------------- | ----------------------- |
 | 3DGS       | 0.771/25.246/0.205     | 0.938/31.980/0.205      | 0.905/28.700/0.204      | 0.868/27.410/0.103      |
@@ -105,8 +105,7 @@ We report the SSIM/PSNR/LPIPS metrics of our method under both uniform lighting 
 | ---------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- |
 | Ours       | 0.808✅/26.365✅/0.204  | 0.955✅/32.183/0.057✅   | 0.920✅/29.373✅/0.080✅  | 0.893✅/28.549✅/0.096   |
 
-
-### Table 2: Results of kitchen, room, stump scenarios
+**Table 2: Results of kitchen, room, stump scenarios**
 |            | kitchen                | room                    | stump                   |
 | :--------: | ---------------------- | ----------------------- | ----------------------- |
 | 3DGS       | 0.922/30.317/0.129     | 0.914/30.632/0.220      | 0.775/26.550/0.210      |
@@ -115,12 +114,12 @@ We report the SSIM/PSNR/LPIPS metrics of our method under both uniform lighting 
 | ---------- | ---------------------- | ----------------------- | ----------------------- |
 | Ours       | 0.954✅/32.107✅/0.041✅ | 0.950✅/32.115✅/0.064✅  | 0.787/26.518/0.211      |
 
-
 **Although our method is specifically proposed for non-uniform illumination scenarios, experimental results demonstrate that it still achieves state-of-the-art (SOTA) performance even under normal illumination conditions.**
 
 
+### 2.2  Qualitative comparison under normal and non-uniform illumination conditions
 
-
+<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/images/Comparison%20of%20Normal%20LightingUneven%20Lighting%402x.png" width="800" alt="颜色转换前后对比">
 
 ## 3. Comparison of Colors Before and After Conversion
 
