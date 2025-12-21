@@ -3,7 +3,7 @@ This repository provides supplementary experimental results to address the revie
 
 ------
 
-## 1. Extended Experimental Setup
+## 1. Extended Experimental ()
 ### 1.1 Datasets
 We evaluate our method on two representative datasets covering diverse lighting scenarios:
 | Dataset               | Number of Scenes | Lighting Scenarios                  | Split Ratio (Train/Test)  |
@@ -22,9 +22,7 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 | LLGS           | ICASSP (2025)     | Gaussian illumination via absorptance modulation |
 
 ### 1.3 Experimental results
-**The table below presents the performance metrics (PSNR ↑, SSIM ↑, LPIPS ↓) of different methods across various scenes in the NeRF360-Varying dataset:(Note: ✅ indicates the best-performing metric for each evaluation item.)**
-
-### TABLE IV: QUANTITATIVE RESULTS OF MIPNERF360-VARYING (PARTIAL SCENES)
+**The following table presents the performance metrics (PSNR↑, SSIM↑, LPIPS↓) of various methods under non-uniform illumination conditions on the NeRF360-Varying dataset.(Note: ✅ indicates the best-performing metric for each evaluation item.)**
 
 | scene      | metric | 3DGS      | Aleth-NeRF | GS-W     | Luminance-GS | Ours      |
 |------------|--------|-----------|------------|-----------|--------------|-----------|
@@ -57,10 +55,10 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 |            | LPIPS ↓| 0.402     | 0.665      | 0.432     | 0.389        | **0.304 ✅** |
 
 
-**Add the method LLGS (ICASSP) for comparison on the LOM dataset.(Note: ✅ indicates the best-performing metric for each evaluation item.)**
+**Add the method LLGS (ICASSP) for comparison on the LOM dataset. Training with a mixed dataset of normal-light and low-light images(Note: ✅ indicates the best-performing metric for each evaluation item.)**
 
-| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
-|---------|--------|--------|------------|--------|--------------|--------|--------|
+|         | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
+|  scene  |--------|--------|------------|--------|--------------|--------|--------|
 |         | PSNR ↑ | 18.447 |   9.378    | **26.747 ✅** |    20.358    | 15.753 | 22.371 |
 |  "bike" | SSIM ↑ | 0.547  |   0.254    | 0.851  |    0.754     | 0.623  |**0.858 ✅**  |
 |         | LPIPS ↓| 0.328  |   0.751    | 0.278  |    0.368     | 0.445  | **0.219 ✅**  |
@@ -74,9 +72,14 @@ We add **LLGS (ICASSP 2025)** as an extra baseline, covering classic and state-o
 |         | LPIPS ↓| 0.374  |   0.713    | 0.289  |    0.207     | 0.366  | **0.204 ✅**  |
 
 
+## 2. Experimental results under normal illumination conditions
 
-## 2. Quantitative Comparisons (Uniform/Non-Uniform Lighting)
-We report the PSNR/SSIM/LPIPS metrics of our method under both uniform and non-uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.
+## 2.1 Quantitative Comparisons (normal Lighting)
+**We report the PSNR/SSIM/LPIPS metrics of our method under both uniform lighting conditions (lower LPIPS = better perceptual quality) to better evaluate the contribution of our approach.** 
+**Although our method is specifically proposed for non-uniform illumination scenarios, experimental results demonstrate that it still achieves state-of-the-art (SOTA) performance even under normal illumination conditions.**
+| scene   | metric | 3DGS   | Aleth-NeRF | GS-W   | Luminance-GS |  LLGS  | Ours   |
+
+
 ### 2.1 Uniform/Non-uniform Quantitative Comparison
 
 
