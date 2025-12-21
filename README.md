@@ -1,11 +1,3 @@
----
-layout: default
----
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # icassp_2026_Response
 
 This repository provides supplementary experimental results to address the reviewers' comments, including extended baselines, dataset details, and quantitative comparisons under uniform/non-uniform lighting.
@@ -102,25 +94,29 @@ We report the SSIM/PSNR/LPIPS metrics of our method under both uniform lighting 
 | ---------- | ---------- | ----------  | ---------- |
 |    Ours    | **0.895✅** | **29.601✅** | **0.108✅** |
 
-####  The quantitative comparison results of <span style="color: blue; font-weight: bold;">SSIM/PSNR/LPIPS</span> across all scenarios under normal illumination conditions are presented in the following table.(Note: <span style="color: red; font-weight: bold;">Red font</span> indicates the optimal metric value.)
+#### The quantitative comparison results of SSIM/PSNR/LPIPS across all scenarios under normal illumination conditions are presented in the following table. (Note: The ✅ symbol indicates the optimal metric value.)
 
-|            |                           bicycle                            |                            bonsai                            |                           counter                            |                            garden                            |
-| :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|    3DGS    |                      0.771/25.246/0.205                      |                      0.938/31.980/0.205                      |                      0.905/28.700/0.204                      |                      0.868/27.410/0.103                      |
-| ---------- |                          ----------                          |                          ----------                          |                          ----------                          |                          ----------                          |
-|  Pixel-GS  |      0.793/25.739/<span style="color: red; font-weight: bold;">0.173</span>      |      0.951/<span style="color: red; font-weight: bold;">32.697</span>/0.162      |                      0.921/29.299/0.162                      |      0.878/27.834/<span style="color: red; font-weight: bold;">0.094</span>      |
-| ---------- |                          ----------                          |                          ----------                          |                          ----------                          |                          ----------                          |
-|    Ours    | <span style="color: red; font-weight: bold;">0.808</span>/<span style="color: red; font-weight: bold;">26.365</span>/0.204 | <span style="color: red; font-weight: bold;">0.955</span>/32.183/<span style="color: red; font-weight: bold;">0.057</span> | <span style="color: red; font-weight: bold;">0.920</span>/<span style="color: red; font-weight: bold;">29.373</span>/<span style="color: red; font-weight: bold;">0.080</span> | <span style="color: red; font-weight: bold;">0.893</span>/<span style="color: red; font-weight: bold;">28.549</span>/0.096 |
+### Table 1: Results of bicycle, bonsai, counter, garden scenarios
+|            | bicycle                | bonsai                  | counter                 | garden                  |
+| :--------: | ---------------------- | ----------------------- | ----------------------- | ----------------------- |
+| 3DGS       | 0.771/25.246/0.205     | 0.938/31.980/0.205      | 0.905/28.700/0.204      | 0.868/27.410/0.103      |
+| ---------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- |
+| Pixel-GS   | 0.793/25.739/0.173✅   | 0.951/32.697✅/0.162     | 0.921/29.299/0.162      | 0.878/27.834/0.094✅     |
+| ---------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- |
+| Ours       | 0.808✅/26.365✅/0.204  | 0.955✅/32.183/0.057✅   | 0.920✅/29.373✅/0.080✅  | 0.893✅/28.549✅/0.096   |
 
-|            |                           kitchen                            |                             room                             |                            stump                             |
-| :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|    3DGS    |                      0.922/30.317/0.129                      |                      0.914/30.632/0.220                      |                      0.775/26.550/0.210                      |
-| ---------- |                          ----------                          |                          ----------                          |                          ----------                          |
-|  Pixel-GS  |                      0.936/31.956/0.106                      |                      0.930/31.794/0.183                      | <span style="color: red; font-weight: bold;">0.796</span>/<span style="color: red; font-weight: bold;">27.111</span>/<span style="color: red; font-weight: bold;">0.181</span> |
-| ---------- |                          ----------                          |                          ----------                          |                          ----------                          |
-|    Ours    | <span style="color: red; font-weight: bold;">0.954</span>/<span style="color: red; font-weight: bold;">32.107</span>/<span style="color: red; font-weight: bold;">0.041</span> | <span style="color: red; font-weight: bold;">0.950</span>/<span style="color: red; font-weight: bold;">32.115</span>/<span style="color: red; font-weight: bold;">0.064</span> |                      0.787/26.518/0.211                      |
 
-<span style="color: green; font-weight: bold;">Although our method is specifically proposed for non-uniform illumination scenarios, experimental results demonstrate that it still achieves state-of-the-art (SOTA) performance even under normal illumination conditions.</span>
+### Table 2: Results of kitchen, room, stump scenarios
+|            | kitchen                | room                    | stump                   |
+| :--------: | ---------------------- | ----------------------- | ----------------------- |
+| 3DGS       | 0.922/30.317/0.129     | 0.914/30.632/0.220      | 0.775/26.550/0.210      |
+| ---------- | ---------------------- | ----------------------- | ----------------------- |
+| Pixel-GS   | 0.936/31.956/0.106     | 0.930/31.794/0.183      | 0.796✅/27.111✅/0.181✅  |
+| ---------- | ---------------------- | ----------------------- | ----------------------- |
+| Ours       | 0.954✅/32.107✅/0.041✅ | 0.950✅/32.115✅/0.064✅  | 0.787/26.518/0.211      |
+
+
+**Although our method is specifically proposed for non-uniform illumination scenarios, experimental results demonstrate that it still achieves state-of-the-art (SOTA) performance even under normal illumination conditions.**
 
 
 
