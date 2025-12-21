@@ -119,7 +119,7 @@ We report the SSIM/PSNR/LPIPS metrics of our method under both uniform lighting 
 
 ### 2.2  Qualitative comparison under normal and non-uniform illumination conditions
 
-<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/images/Comparison%20of%20Normal%20LightingUneven%20Lighting.png" width="800" alt="正常关照/不均匀光照对比">
+<img src="https://github.com/zhang-y-l-hup/icassp_2026_Response/raw/main/images/Comparison%20of%20Normal%20LightingUneven%20Lighting%402x.png" width="800" alt="正常关照/不均匀光照对比">
 
 ## 3. Comparison of Colors Before and After Conversion
 
